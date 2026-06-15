@@ -140,19 +140,23 @@ const CalendarManager = () => {
             </select>
           </div>
 
-          <FullCalendar
-            plugins={[dayGridPlugin, interactionPlugin]}
-            initialView="dayGridMonth"
-            events={events}
-            dateClick={handleDateClick}
-            eventClick={handleEventClick}
-            height="auto"
-            headerToolbar={{
-              left: 'prev,next today',
-              center: 'title',
-              right: 'dayGridMonth',
-            }}
-          />
+          <div className="overflow-x-auto">
+            <div className="min-w-[600px] md:min-w-full">
+              <FullCalendar
+                plugins={[dayGridPlugin, interactionPlugin]}
+                initialView="dayGridMonth"
+                events={events}
+                dateClick={handleDateClick}
+                eventClick={handleEventClick}
+                height="auto"
+                headerToolbar={{
+                  left: 'prev,next today',
+                  center: 'title',
+                  right: 'dayGridMonth',
+                }}
+              />
+            </div>
+          </div>
         </section>
 
         <aside className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">

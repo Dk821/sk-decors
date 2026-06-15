@@ -48,7 +48,7 @@ const Settings = () => {
             <label className="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
             <input type="text" name="businessName" value={formData.businessName} onChange={handleChange} className="w-full border p-3 rounded-xl focus:ring-2 focus:ring-primary/50 outline-none" />
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Phone 1</label>
               <input type="text" name="phone1" value={formData.phone1} onChange={handleChange} className="w-full border p-3 rounded-xl focus:ring-2 focus:ring-primary/50 outline-none" />
